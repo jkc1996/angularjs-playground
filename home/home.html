@@ -1,0 +1,13 @@
+<h1>Hello {{$ctrl.name}}!</h1>
+<p>
+  Start editing <b>home/home.html</b> :)
+  
+  <a ui-sref="about({token: 'abc'})" target="_blank">about</a>
+  <button class="button" ng-click="$ctrl.getUsers()"> Find Users!</button>
+</p>
+<span ng-if="show">Here I Am</span>
+<p>
+  <ul>
+    <li ng-repeat="user in $ctrl.users"><span>Id: {{ user.id}}</span> - <span>{{user.name}}</span></li>
+  </ul>
+</p>
